@@ -53,14 +53,14 @@ app.post("/", function(req, res){
   //   });
   // });
 
-  request.write(jsonData);
+  // request.write(jsonData);
   request.end();
 
 });
 
-app.post("/failure", function(req, res){
-  res.redirect("/");
-});
+// app.post("/failure", function(req, res){
+//   res.redirect("/");
+// });
 
 app.listen(process.env.PORT || 3000, function(req, res){
   console.log("signup is ready...");
