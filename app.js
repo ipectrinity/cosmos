@@ -1,9 +1,8 @@
 //jshint esversion: 6
 
 const express = require("express");
-const https = require("https");
+// const https = require("https");
 const bodyParser = require("body-parser");
-const request = require("request");
 
 const app = express();
 
@@ -14,7 +13,7 @@ app.get("/", function(req, res){
   res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/", function(req, res){
+// app.post("/", function(req, res){
   // const firstName = req.body.fName;
   // const lastName = req.body.lName;
   // const emailId = req.body.emailId;
@@ -39,7 +38,7 @@ app.post("/", function(req, res){
   //   auth: "tarun0:d64c2c125bd689b61cdbbab052a4ad20-us7"
   // };
 
-  const request = https.request(url, options, function(response){
+  //const request = https.request(url, options, function(response){
 
     // if(response.statusCode === 200){
     //   res.sendFile(__dirname + "/success.html");
@@ -54,9 +53,9 @@ app.post("/", function(req, res){
   // });
   //
   // request.write(jsonData);
-  request.end();
+  // request.end();
 
-});
+// });
 
 // app.post("/failure", function(req, res){
 //   res.redirect("/");
