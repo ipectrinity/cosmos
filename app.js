@@ -16,6 +16,22 @@ app.get("/", function(req, res){
   res.render("index.ejs");
 });
 
+app.get("/facts", function(req, res){
+  res.render("facts.ejs");
+});
+
+app.get("/stories", function(req, res){
+  res.render("stories.ejs");
+});
+
+app.get("/nearyou", function(req, res){
+  res.render("nearyou.ejs");
+});
+
+app.get("/ngos", function(req, res){
+  res.render("ngos.ejs");
+});
+
 app.get("/signup", function(req, res){
   res.render("signup.ejs");
 });
@@ -48,10 +64,10 @@ app.post("/signup", function(req, res){
   const request = https.request(url, options, function(response){
 
     if(response.statusCode === 200){
-      res.render("/success.ejs");
+      res.render("/success");
     }
     else{
-      res.render("/failure.ejs");
+      res.render("/failure");
     }
 
     response.on("data", function(data){
@@ -65,11 +81,11 @@ app.post("/signup", function(req, res){
 });
 
 app.post("/failure", function(req, res){
-  res.redirect("/");
+  res.redirect("/signup");
 });
 
 app.listen(process.env.PORT || 3000, function(req, res){
-  console.log("signup is ready...");
+  console.log("website is ready...");
 });
 
 //mailchimp
