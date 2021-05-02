@@ -30,7 +30,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 7% 15%;
+  padding: 0 15%;
 }
 
 /* Sections */
@@ -48,7 +48,7 @@ p {
 /* Navigation Bar */
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 1rem 0 4.5rem;
 }
 
 .navbar-brand {
@@ -74,6 +74,15 @@ p {
   z-index: 1;
 }
 
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+  padding-top: 1%;
+}
 /* Title Section */
 
 #title {
@@ -83,16 +92,11 @@ p {
   text-align: left;
 }
 
-
 #title .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 1% 15% 7%;
   z-index: 1;
 }
 
-#quote{
-  padding-top: 10%;
-  padding-bottom: -1;
-}
 /* Title Image */
 
 .title-image {

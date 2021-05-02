@@ -4,6 +4,7 @@ const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
 const request = require("request");
+let userData = [];
 
 const app = express();
 
@@ -36,6 +37,14 @@ app.get("/signup", function(req, res){
   res.render("signup.ejs");
 });
 
+app.get("/success", function(req, res){
+  res.render("success.ejs");
+});
+
+app.post("/success", function(req, res){
+  res.redirect("/");
+})
+
 app.post("/signup", function(req, res){
   const firstName = req.body.fName;
   const lastName = req.body.lName;
@@ -53,36 +62,13 @@ app.post("/signup", function(req, res){
       }
     ]
   };
-  const jsonData = JSON.stringify(data);
-  const url = "https://us7.api.mailchimp.com/3.0/lists/4297802829";
 
-  const options = {
-    method: "POST",
-    auth: "tarun0:d64c2c125bd689b61cdbbab052a4ad20-us7"
-  };
+  userData.push(data);
 
-  const request = https.request(url, options, function(response){
-
-    if(response.statusCode === 200){
-      res.render("/success");
-    }
-    else{
-      res.render("/failure");
-    }
-
-    response.on("data", function(data){
-      console.log(JSON.parse(data));
-    });
-  });
-
-  request.write(jsonData);
-  request.end();
+  res.redirect("/success");
 
 });
 
-app.post("/failure", function(req, res){
-  res.redirect("/signup");
-});
 
 app.listen(process.env.PORT || 3000, function(req, res){
   console.log("website is ready...");
