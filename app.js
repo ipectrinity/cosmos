@@ -25,10 +25,6 @@ app.get("/stories", function(req, res){
   res.render("stories.ejs");
 });
 
-app.get("/nearyou", function(req, res){
-  res.render("nearyou.ejs");
-});
-
 app.get("/ngos", function(req, res){
   res.render("ngos.ejs");
 });

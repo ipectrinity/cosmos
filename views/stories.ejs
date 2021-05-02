@@ -1,9 +1,75 @@
 <%- include("partials/header") -%>
 
-<div class="container-fluid">
-  <blockquote class="blockquote">
-    <p class="mb-0" id="quote">As long as you don't give up, you will improve and make this world a better place !</p>
-  </blockquote>
+<div class="container-fluid" style="padding-top : 0; padding-bottom: 3%;">
+  <div class="row row-content align-items-center">
+    <div class="card card-body bg-light">
+      <blockquote class="blockquote">
+        <p class="mb-0" style="color: black;" id="quote">As long as you don't give up, you will improve and make this world a better place !</p>
+        <footer class="blockquote-footer">
+          <cite title="Source Title">Unknown</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+<h1 >Some Amazing Stories</h1>
+<div class="container-fluid" style="padding-bottom : 8%; padding-top : 2%">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            100-year-old Hyderabad resident takes vax, shows the way
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Dispelling misconceptions and fears associated with the efficacy of Covid-19 vaccines, a 100-year-old city resident Jaidev Chowdhry got himself inoculated on Monday.
+          The centenarian, who is a retired entrepreneur, was one amongst the first to visit hospital for the vaccine.
+          After getting vaccinated, Jaidev Chowdhry urged everyone above 60 years and those between 45 years and 59 years with comorbidities to get inoculated as it is more difficult for
+          people of these ages to fight infections with their immune systems becoming weak.
+          “Due to the pandemic, senior citizens in Hyderabad had to remain indoors for a long time which in turn had a lot of impact on their mental and physical health. I was waiting
+          for this day to be vaccinated so that I can go back to my old routine and lead an active social life. I also see this as the only way to end the pandemic,” said Chowdhry.
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How this transgender doctor at helm of vax duty is injecting hope
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          A talk with the nodal officer of the vaccination centre at Hamdard Institute of Medical Sciences and Research (HIMSAR) on Thursday left an elderly individual bemused. “She looks
+          like a woman, but talks differently,” he confided in a volunteer. The response he got was, “She is Aqsa Shaikh, associate professor of community medicine at this institute.
+          She is a transgender person.”
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Chennai: Auto driver hands over bag with Rs 1.7 lakh to cops, Rewarded
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          An autorickshaw driver was on Monday rewarded by police commissioner Mahesh Kumar Aggarwal after he handed over a bag containing Rs 1.7 lakh he found on a road off
+          Marina Beach to police. They found cash inside the bag, and asked him to go to Marina police station where he handed over the bag to the cops on duty there. Police
+          collected the autorickshaw driver’s contact details. Police are yet to receive a complaint from the person the bag belongs to. Police informed the commissioner about
+          Subramani’s honesty. Following this, the commissioner's office invited Subramani where he was awarded with a shield and a reward appreciating him.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer") -%>

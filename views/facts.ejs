@@ -1,5 +1,80 @@
 <%- include("partials/header") -%>
 
-<h1>ngfngf</h1>
+<h1>Some interesting facts</h1>
+<div class="container-fluid" style="padding-bottom : 8%; padding-top : 2%">
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Improvement in air quality
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          <img src="images/air.jpg" alt="air pollution decreased">
+          New Delhi was ranked as the most polluted
+          city in the world by WHO in May 2014. The usual air
+          quality of India’s national capital according to the air
+          quality index used to be 200. When the pollution level hit
+          its peak, the pollution level soared to 900 and sometimes,
+          off the measurable scale.
+          <br>
+          While 200 itself is 25 percent above unsafe level as deemed by World
+          Health Organization, but as Delhi’s 11 million registered cars were
+          taken off the roads and factories and construction were ground to a
+          halt, AQI levels have regularly fallen below 20. The skies are suddenly a
+          rare, piercing blue. Even the birdsong seems louder.
+          <br>
+          In the capital of New Delhi, government data shows the
+          average concentration of PM 2.5 plunged by 71 percent in the space
+          of a week -- falling from 91 micrograms per cubic meter on March 20,
+          to 26 on March 27, after the lockdown began.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Dolphins spotted near Kolkata ghats
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          <img src="images/dolphin.jpg" alt="Dolphins">
+          Critically endangered, South Asian River Dolphins also known
+          as Ganges Dolphins have been
+          spotted back in the Ganga river after 30 years.
+          <br>
+          Due to the reduced pollution in water, the South Asian River
+          Dolphins have been spotted at various Ganga Ghats of Kolkata.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Ganga fit for drinking in Haridwar
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          <img src="images/ganga.jpg" alt="Ganga">
+          The Uttarakhand Pollution Control Board Water from
+          Har-ki-Pauri in Haridwar was tested and the results from the
+          tests reveal that the water here has been classified as 'fit for
+          drinking after chlorination',
+          for the first time in decades.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%- include("partials/footer") -%>
